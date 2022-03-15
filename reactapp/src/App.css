@@ -67,3 +67,12 @@ li a {
 li a:hover {
   background-color: #111;
 }
+.myDiv {
+  border: 5px outset ;    
+  text-align: center;
+}
+.header{
+
+
+background-color:Blue;
+}
