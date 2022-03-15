@@ -1,0 +1,32 @@
+
+.container1{
+    border-style: "outset";
+  width: 500px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 20px;
+  vertical-align:middle;
+  text-align: center;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: -250px;
+   
+}
+*{
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.body{
+  height: 100vh;
+}
+.nav{
+  background-color: #051367;
+  height: 80px;
+  width: 100%;
+  
+  
+}
