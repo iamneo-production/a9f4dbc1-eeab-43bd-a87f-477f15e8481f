@@ -7,6 +7,9 @@ import Navbar from './Navbar';
 import Sign from './Sign';
 import AdminLogin from './AdminLogin';
 import './image2.jpg';
+import Application from './Application';
+import Upload from './Upload';
+import Track from './Track';
 export default function App() {
   return (
     <div className='header'>
@@ -16,9 +19,12 @@ export default function App() {
 
       <Routes>
         <Route path ="" element ={<Navbar />} />
-          <Route path="login" element={<Login />} />
+          <Route path="userlogin" element={<Login />} />
           <Route path="adminlogin" element={<AdminLogin />} />
           <Route path="signup" element={<Sign />} />
+          <Route path="application" element={<Application />} />
+          <Route path="Upload" element={<Upload />} />
+          <Route path="Track" element={<Track />} />
           
           
       </Routes>
