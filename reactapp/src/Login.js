@@ -1,8 +1,26 @@
 import React,{useState} from 'react';
-import './Login.css';
+// import './App.css';
 import { Link } from 'react-router-dom';
+import {Icon} from 'react-icons-kit';
+import {eyeOff} from 'react-icons-kit/feather/eyeOff';
+import {eye} from 'react-icons-kit/feather/eye';
+
 const Login = () => {
- 
+
+const [icon,setIcon]=useState(eyeOff);
+const [showpass,setShowpass]=useState(true);
+
+const handleToggle = () => {
+  if(showpass===true){
+  setIcon(eye);
+  setShowpass(false);
+  }
+  else{
+    setIcon(eyeOff);
+    setShowpass(true);
+  }
+}
+
 const[data,setData] = useState({
   email :'',
   password :'',
@@ -17,26 +35,24 @@ const submitHandler = e =>{
 }
 return(
 
-    <div className='container'>
-      
-    <center>
-      <form onSubmit={submitHandler}>
-      <label for="email"><h3>Enter Email Id</h3> :  
-        <input type="text" id="email" name="email" value={email} onChange={changeHandler} /> </label>
+     <div className="main">
+        <nav>
+            <h1 className="text-a">Login</h1>
+        </nav>
+        <div className="main-tag">
+            <form onSubmit={submitHandler}>
+                <input type="email" id="email"  name="email" value={email} onChange={changeHandler} required placeholder="Enter Email"/><br/>
+                <div className="input-field">
+                <input type={showpass?"password":"text"} id="password" name="password" value={password} onChange={changeHandler} required placeholder="Enter Password"/>
+                <span onClick={handleToggle}><Icon icon={icon} size={20}/></span>
+                </div><br/><br/>
+                <button type="submit" id="submitButton" className="asd" name="login" value="Login">Login</button>   
+            </form> <br/>
+            <p>New User? <Link to="/signup">sign up</Link></p>
+        </div>
         
-        <label for="password"><h3>Enter Password</h3> : 
-        <input type="password" id="password" name="password" value={password} onChange={changeHandler} /> <br /> </label>
-        <input type="submit" id="submitButton" name="login" value="Login" />
-        
-        <br />
-        <p>
-        New User/admin? <Link to='/signup'>sign up</Link>
-      </p>
-      </form>
-      
-      </center>
+        </div>
     
-      </div>
 )
 }
 export default Login;

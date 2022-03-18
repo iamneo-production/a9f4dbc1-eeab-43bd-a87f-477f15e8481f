@@ -12,19 +12,18 @@ import Upload from './Upload';
 import Track from './Track';
 export default function App() {
   return (
-    <div className='header'>
-      <h1 className='pheader'>E PASSPORT ONLINE PORTAL</h1>
+    <div>
       
     <BrowserRouter>
 
       <Routes>
         <Route path ="" element ={<Navbar />} />
-          <Route path="userlogin" element={<Login />} />
-          <Route path="adminlogin" element={<AdminLogin />} />
-          <Route path="signup" element={<Sign />} />
-          <Route path="application" element={<Application />} />
-          <Route path="Upload" element={<Upload />} />
-          <Route path="Track" element={<Track />} />
+          <Route exact path="/userlogin" element={<Login />} />
+          <Route exact path="/adminlogin" element={<AdminLogin />} />
+          <Route exact path="/signup" element={<Sign />} />
+          <Route exact path="/application" element={<Application />} />
+          <Route exact path="/Upload" element={<Upload />} />
+          <Route exact path="/Track" element={<Track />} />
           
           
       </Routes>
