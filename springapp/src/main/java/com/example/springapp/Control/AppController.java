@@ -21,7 +21,7 @@ import com.example.springapp.Model.Model;
 @CrossOrigin("http://localhost:8081")
 public class AppController {
     @Autowired
-    private AppService storageService;
+    private  AppService storageService;
 
     //To Add Documents In Database
     @PostMapping("/user/addDocument")
