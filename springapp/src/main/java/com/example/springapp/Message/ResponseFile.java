@@ -1,5 +1,6 @@
 package com.example.springapp.Message;
 
+//message file for Documents endpoints
 public class ResponseFile {
     private String name;
     private String url;

@@ -1,4 +1,5 @@
 package com.example.springapp.Message;
+//message file for Documents endpoints
 public class ResponseMessage {
     private String message;
     public ResponseMessage(String message) {

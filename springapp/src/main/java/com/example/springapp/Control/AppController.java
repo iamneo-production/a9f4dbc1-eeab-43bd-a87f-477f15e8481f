@@ -23,12 +23,12 @@ public class AppController {
     @Autowired
     private AppService storageService;
 
-    //To Add Documents In Database
+    //To Add Documents-Endpoint
     @PostMapping("/user/addDocument")
     public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
         return null;
     }
-    //To Get Documents In Database
+    //To Get Documents-Endpoint
     @GetMapping("/user/getDocument")
     public ResponseEntity<List<ResponseFile>> getListFiles() {
         List<ResponseFile> files = storageService.getAllFiles().map(dbFile -> {
@@ -44,7 +44,7 @@ public class AppController {
         }).collect(Collectors.toList());
         return ResponseEntity.status(HttpStatus.OK).body(files);
     }
-    //To View Documents By ID
+    //To View Documents-Endpoint
     @GetMapping("/user/getDocument/{id}")
     public ResponseEntity<byte[]> getFile(@PathVariable String id) {
         Model fileDB = storageService.getFile(id);

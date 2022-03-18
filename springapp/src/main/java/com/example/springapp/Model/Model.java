@@ -12,6 +12,7 @@ public class Model {
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
+    // The Model is been for Documents
     private String id;
     private String name;
     private String type;

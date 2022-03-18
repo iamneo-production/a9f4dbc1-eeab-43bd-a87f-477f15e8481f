@@ -10,6 +10,7 @@ import com.example.springapp.Model.Model;
 import com.example.springapp.Repository.FileRepository;
 @Service
 public class AppService {
+    //Service file as of created Document Endpoint 
     @Autowired
     private FileRepository FileRepository;
     public Model store(MultipartFile file) throws IOException {
