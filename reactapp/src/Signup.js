@@ -6,7 +6,7 @@ import {eyeOff} from 'react-icons-kit/feather/eyeOff';
 import {eye} from 'react-icons-kit/feather/eye';
 
 
-const Sign=()=> {
+const Signup=()=> {
 
   const [icon1,setIcon1]=useState(eyeOff);
   const [showpass,setShowpass]=useState(true);
@@ -62,22 +62,22 @@ const Sign=()=> {
     </nav>
     <div className="main-tag">
         <form onSubmit={submitHandler}>
-            <input type="text" id="role" name="role" value={role} onChange={changeHandler} required placeholder="Enter admin/user"/><br/>
+            <input type="text" id="admin/user" name="role" value={role} onChange={changeHandler} required placeholder="Enter admin/user"/><br/>
             <input type="email" id="email"  name="email" value={email} onChange={changeHandler} required placeholder="Enter Email"/><br/>
             <input type="text" id="username" name="username" value={username} onChange={changeHandler} required placeholder="Enter UserName"/><br/>
-            <input type="text" id="mobilenumber" name="mobilenumber" value={mobilenumber} onChange={changeHandler} required placeholder="Enter MobileNumber"/><br/>
+            <input type="text" id="mobileNumber" name="mobilenumber" value={mobilenumber} onChange={changeHandler} required placeholder="Enter MobileNumber"/><br/>
             <input type={showpass?"password":"text"} id="password" name="password" value={password} onChange={changeHandler} required placeholder="Enter Password"/>
             <span onClick={handlePass}><Icon icon={icon1} size={20}/></span><br/>
-            <input type={showCpass?"password":"text"} id="confirmpassword" name="confirmpassword" value={confirmpassword} onChange={changeHandler} required placeholder="Confirm Password"/>
+            <input type={showCpass?"password":"text"} id="confirmPassword" name="confirmpassword" value={confirmpassword} onChange={changeHandler} required placeholder="Confirm Password"/>
             <span onClick={handleCpass}><Icon icon={icon2} size={20}/></span><br/><br/>
             <button type="submit" id="submitButton" className="asd" name="signup" value="signup" >Sign Up</button>
         </form> <br/>
         
-            <p>Already a user? <Link to="/userlogin">Login</Link></p>
+            <p>Already a user? <Link to="/userlogin" id="signinLink">Login</Link></p>
         
     </div>
     </div>
   )
 }
 
-export default Sign;
+export default Signup;

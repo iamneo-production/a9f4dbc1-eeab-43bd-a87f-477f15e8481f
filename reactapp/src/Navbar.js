@@ -10,18 +10,22 @@ const Navbar = () => {
   const navigate=useNavigate();
   return (
     <div>
-      <h1 className='pheader'>E PASSPORT ONLINE PORTAL</h1><br/><br/>
+      <nav>
+      <h1 className='text-a'>E PASSPORT ONLINE PORTAL</h1>
+      </nav><br/><br/><br/><br/><br/><br/><br/>
   <div className="row">
     <div className="col" >
+    <br/><br/><br/>
     <Card sx={{ maxWidth: 345 }}><br/>
-      <CardMedia component="img" height="350" image={man} alt="user"/>
+      <CardMedia component="img" height="250" image={man} alt="user"/>
       <CardActions><Button variant="outline-secondary" size="large" onClick={()=>navigate('/userlogin')}><h3>User</h3></Button></CardActions>
     </Card>
     </div>
     <div className="col">
+    <br/><br/><br/>
     <Card sx={{ maxWidth: 345 }}><br/>
-      <CardMedia component="img" height="350" image={admin} alt="admin"/>
-      <CardActions><Button variant="outline-secondary" size="large" onClick={()=>navigate()}><h3>Admin</h3></Button></CardActions>
+      <CardMedia component="img" height="250" image={admin} alt="admin"/>
+      <CardActions><Button variant="outline-secondary" size="large" onClick={()=>navigate('/adminlogin')}><h3>Admin</h3></Button></CardActions>
     </Card>
     </div>
   </div>
