@@ -1,4 +1,5 @@
 package com.example.springapp.Control;
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,15 +17,17 @@ import com.example.springapp.Message.ResponseFile;
 import com.example.springapp.Message.ResponseMessage;
 import com.example.springapp.Model.Model;
 @Controller
-@CrossOrigin("http://localhost:8081")
+//@CrossOrigin("http://localhost:8081")
 public class AppController {
     @Autowired
     private AppService storageService;
 
     //To Add Documents-Endpoint
     @PostMapping("/user/addDocument")
-    public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
-        return null;
+    @ResponseBody
+    public String uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
+        storageService.store(file);
+        return file.getOriginalFilename();
     }
     //To Get Documents-Endpoint
     @GetMapping("/user/getDocument")
