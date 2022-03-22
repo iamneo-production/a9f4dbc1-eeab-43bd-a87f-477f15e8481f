@@ -75,9 +75,9 @@ Button{
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
   padding: 20px;
-  width: 200px;
+  width: 100px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -148,13 +148,12 @@ nav{
 
 .main-tag2{
   border-radius: 20px;
-  /* margin-top: 1000px; */
   height: auto;
   background-color: #0c0c0b62;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 100%;
-  
+  width: 100%; 
 }
+
 
 .main-tag , nav , .main{
   display: flex;
@@ -163,7 +162,7 @@ nav{
   align-items: center;
 }
 
-input,Input{
+input,Input,select{
   width: 300px;
   height: 40px;
   margin: 10px;
@@ -216,6 +215,31 @@ input,Input{
   cursor:pointer;
 }
 
+.asd2{
+  width: 200px;
+  height: 40px;
+  background-color: #051367;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50px;
+  border: 0;
+  cursor:pointer;
+}
+
+.asd3{
+  width: 200px;
+  height: 40px;
+  background-color: #051367;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50px;
+  border: 0;
+  cursor:pointer;
+}
+
+
 button:hover{
   color: #000;
   background-color: yellowgreen;
@@ -260,10 +284,8 @@ margin-left: -250px;
   width: 32%;
   padding: 10px;
   text-align: center;
-  /* height: 300px; Should be removed. Only for demonstration */
 }
 
-/* Clear floats after the columns */
 .approw:after {
   content: "";
   display: table;
@@ -276,13 +298,26 @@ margin-left: -250px;
   padding: 10px;
   text-align: center;
   margin-top: 100px;
-  /* height: 300px;  */
   margin:2em;
 }
 
-/* Clear floats after the columns */
 .addrrow:after {
   content: "";
   display: table;
   clear: both;
+  
 }
+
+img {
+  float:right;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  
+}
+
+.asd3{
+ margin-left: 1100px;
+}
+

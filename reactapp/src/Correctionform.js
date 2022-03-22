@@ -2,7 +2,7 @@ import {React,useState} from 'react'
 import {useNavigate} from 'react-router';
 import NavigateBar from './NavigateBar';
 
-function Applynewcard() {
+function Correctionform() {
 
   const navi=useNavigate();
 
@@ -38,7 +38,7 @@ function Applynewcard() {
   const submitHandler = e =>{
     e.preventDefault()
     console.log(data)
-    navi('/newcardform/2')
+    navi('/correctionform/2')
   }
 
   return (
@@ -91,7 +91,7 @@ function Applynewcard() {
               Nationality :<input type="text" className="inp" id="nationality" name="nationality2" value={nationality2} onChange={changeHandler}/></p><br/>
             </div>
           </div>
-         <div style={{textAlign: 'center'}}><a href="/newcardform/1" className="asd1 nav-links">1</a>{" "}<a href="/newcardform/2" className="asd1 nav-links">2</a></div>
+         <div style={{textAlign: 'center'}}><a href="/correctionform/1" className="asd1 nav-links">1</a>{" "}<a href="/correctionform/2" className="asd1 nav-links">2</a></div>
         <button type="submit" style={{marginLeft:"1170px",marginBottom:'15px'}} className="asd1">
         <p className='nav-links'>Next</p>
         </button>
@@ -102,4 +102,4 @@ function Applynewcard() {
   )
 }
 
-export default Applynewcard
+export default Correctionform

@@ -10,19 +10,19 @@ function NavigateBar() {
     const MenuItems=[
         {
             title: 'New card form',
-            url: '/newcardform',
+            url: '/newcardform/1',
             cName: 'nav-links b',
             id:'newCardForm',
         },
         {
             title: 'Correction form',
-            url: '#',
+            url: '/correctionform/1',
             cName: 'nav-links b',
             id:'correctionCardForm',
         },
         {
             title: 'Track status',
-            url: '#',
+            url: '/trackstatus',
             cName: 'nav-links b',
             id:'correctionDocuments',
         },
