@@ -52,6 +52,7 @@
 .container img {
   width: 80%;
   height: auto;
+  
 }
 .col {
   float: left;
@@ -121,9 +122,14 @@ nav{
   background-color: #051367;
   height: 80px;
   width: 100%;
-  
-  
 }
+
+nav{
+  background-color: #051367;
+  height: 80px;
+  width: 100%;
+}
+
 .text-a {
   font-size: 30px;
   color: aliceblue;  
@@ -137,8 +143,7 @@ nav{
   width: 50%;
 }
 .main-tag1{
-  /* border-radius: 20px; */
-  /* margin-top: 90px; */
+
   height: auto;
   background-color: #0c0c0b62;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

@@ -15,6 +15,10 @@ import Correctionform from './Correctionform';
 import Correctionupload from './Correctionupload';
 import Track from './Track';
 import Applications from './Applications';
+import Dashboard from './Dashboard';
+import Applieddocument from './Applieddocument';
+import Documentverification from './Documentverification';
+import Documentcorrection from './Documentcorrection';
 
 
 
@@ -37,6 +41,10 @@ export default function App() {
           <Route path ="/Submission" element ={<Submitsuccess />} />
           <Route path ="/trackstatus" element ={<Track />} />
           <Route path ="/applications" element ={<Applications />} />
+          <Route path ="/dashboard" element ={<Dashboard />} />
+          <Route path ="/applied-documents" element ={<Applieddocument />} />
+          <Route path ="/verification/1" element ={<Documentverification />} />
+          <Route path ="/updated-documents" element ={<Documentcorrection />} />
           
       </Routes>
     </BrowserRouter>

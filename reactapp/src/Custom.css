@@ -15,6 +15,15 @@ nav,a{
     font-size:1.2rem;
 }
 
+.NavbarItems1{
+    height: 80px;
+    background:#530577;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.2rem;
+}
+
 .navbar-logo{
    
     justify-self: start;
@@ -42,6 +51,7 @@ nav,a{
     color: white;
     text-decoration: none;
     transition: all 0.2s ease-out;
+    font-size: 1.1rem;
 }
 
 .fa-bars{
@@ -63,5 +73,11 @@ nav,a{
     padding:15px ;
     border-radius: 4px;
     background:#4346f836;
+    color: white;
+}
+
+.b1:hover{
+    border-radius: 4px;
+    background:#c979ee36;
     color: white;
 }

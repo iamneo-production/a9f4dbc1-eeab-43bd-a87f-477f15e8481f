@@ -1,6 +1,6 @@
-import {React,useState} from 'react';
+import React,{useState} from 'react';
 import './App.css';
-import { Link,useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {Icon} from 'react-icons-kit';
 import {eyeOff} from 'react-icons-kit/feather/eyeOff';
 import {eye} from 'react-icons-kit/feather/eye';
@@ -34,7 +34,7 @@ const changeHandler = e => {
 const submitHandler = e =>{
   e.preventDefault()
   console.log(data)
-  navi('/');
+  navi('/dashboard');
 }
 return(
 
@@ -49,9 +49,9 @@ return(
                 <input type={showpass?"password":"text"} id="password" name="password" value={password} onChange={changeHandler} required placeholder="Enter Password"/>
                 <span onClick={handleToggle}><Icon icon={icon} size={20}/></span>
                 </div><br/><br/>
-                <button type="submit" id="loginButton" className="asd" name="login" value="Login">Login</button>   
+                <button type="submit" id="loginButton" className="asd1" name="login" value="Login">Login</button>   
             </form> <br/>
-            <p>New User/admin? <Link to="/signup" id="signupLink">sign up</Link></p>
+            {/* <p>New admin? <Link to="/signup" id="signupLink">sign up</Link></p> */}
         </div>
         
         </div>
