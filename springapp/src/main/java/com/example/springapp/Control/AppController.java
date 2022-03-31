@@ -17,7 +17,7 @@ import com.example.springapp.Message.ResponseFile;
 import com.example.springapp.Message.ResponseMessage;
 import com.example.springapp.Model.Model;
 @Controller
-//@CrossOrigin("http://localhost:8081")
+@RestController
 public class AppController {
     @Autowired
     private AppService storageService;
