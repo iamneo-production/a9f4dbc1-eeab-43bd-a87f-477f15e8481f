@@ -12,8 +12,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Profile_table")
-
+@Table(name = "profile_table")
 public class Profile {
     @Id
     @GeneratedValue
@@ -24,9 +23,4 @@ public class Profile {
     private String address;
     private String email;
     private String mobile;
-    private String Gender;
-    private int Age;
-    private int DateOfBirth;
-    private String Country;
-    private long AadharNumber ;
 }

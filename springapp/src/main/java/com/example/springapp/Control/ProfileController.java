@@ -19,6 +19,7 @@ public class ProfileController {
     public Profile addProduct(@RequestBody Profile profile) {
         return profileService.saveProfile(profile);
     }
+
     @PostMapping("/addProfiles")
     public List<Profile> addProducts(@RequestBody List<Profile> profiles) {
         return profileService.saveAllProfile(profiles);

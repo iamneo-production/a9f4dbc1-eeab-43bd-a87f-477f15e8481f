@@ -18,6 +18,7 @@ public class ProfileService {
     public Profile saveProfile (Profile profile){
         return profileRepository.save(profile);
     }
+
     public List<Profile> saveAllProfile(List<Profile> profiles){
         return profileRepository.saveAll(profiles);
     }
