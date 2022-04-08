@@ -16,7 +16,7 @@ import Correctionupload from './Correctionupload';
 import Track from './Track';
 import Applications from './Applications';
 import Dashboard from './Dashboard';
-import Applieddocument from './Applieddocument';
+import Applieddocument from './Components/ApplyingDocuments/Applieddocument';
 import Documentverification from './Documentverification';
 import Documentcorrection from './Documentcorrection';
 

@@ -1,0 +1,58 @@
+.img {
+  position: absolute;
+  /* right: 50px; */
+  /* top: 250px; */
+  width: auto;
+  height: auto;
+}
+table,
+td {
+  padding: 16px;
+}
+.box {
+  margin: 20px;
+  margin-left: 100px;
+  width: 80%;
+  background-color: #eeedde;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box1 {
+  margin: 20px;
+  margin-left: 240px;
+  width: 59%;
+  background-color: #eeedde;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+tr {
+  display: block;
+  float: left;
+  width: 1000px;
+}
+
+td {
+  display: block;
+  float: left;
+  width: 300px;
+}
+
+.tabcolumn {
+  float: left;
+  padding: 10px;
+  text-align: left;
+}
+
+.left {
+  width: 57%;
+}
+
+.right {
+  width: 32%;
+}
+
+.tabrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
