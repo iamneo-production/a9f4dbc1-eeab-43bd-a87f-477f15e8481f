@@ -1,5 +1,5 @@
 import {React,useState} from 'react';
-import NavigateBar from './NavigateBar';
+import NavigateBar from '../NavigateBar/NavigateBar';
 import pad from './pad.png';
 import {useNavigate} from 'react-router-dom';
 

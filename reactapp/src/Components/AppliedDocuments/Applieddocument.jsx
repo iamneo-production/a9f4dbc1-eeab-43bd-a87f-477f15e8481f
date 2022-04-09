@@ -1,5 +1,5 @@
 import React from 'react';
-import Adminnavigate from '../../Adminnavigate';
+import Adminnavigate from './Adminnavigate';
 
 function Applieddocument() {
   return (

@@ -1,7 +1,6 @@
 import {React,useState} from 'react';
 import tick from './tick.png';
-import Navigatebar from './NavigateBar';
-import './App.css';
+import Navigatebar from '../CorrectionForm/NavigateBar';
 
 function Submitsuccess() {
 

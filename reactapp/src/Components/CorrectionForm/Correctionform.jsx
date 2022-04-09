@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
 import {useNavigate} from 'react-router';
-import NavigateBar from './NavigateBar';
+import NavigateBar from '../NavigateBar/NavigateBar';
 
 function Correctionform() {
 

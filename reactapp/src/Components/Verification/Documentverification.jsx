@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import Adminnavigate from "./Adminnavigate";
 import user from "./user.jpg";
-import "./App.css";
 
 function Documentverification() {
   const [data, setData] = useState({

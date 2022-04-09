@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom'
 import NavigateBar from './NavigateBar'
 import track1 from './track1.jpg'
 import track2 from './track2.jpg'
-import './App.css'
+
 
 function Track() {
 

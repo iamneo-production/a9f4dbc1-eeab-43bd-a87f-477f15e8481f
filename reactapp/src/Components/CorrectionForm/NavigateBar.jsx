@@ -1,6 +1,6 @@
 import {React} from 'react';
 import {useNavigate} from 'react-router-dom';
-import './Custom.css';
+import '../../Custom.css';
 
 
 function NavigateBar() {
