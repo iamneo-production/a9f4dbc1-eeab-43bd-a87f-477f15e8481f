@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.util.stream.Stream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.example.springapp.Model.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
-import com.example.springapp.Model.Model;
 import com.example.springapp.Repository.FileRepository;
 @Service
 public class AppService {
