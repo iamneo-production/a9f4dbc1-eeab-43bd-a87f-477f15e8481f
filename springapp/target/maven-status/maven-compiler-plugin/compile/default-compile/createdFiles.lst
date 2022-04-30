@@ -1,7 +1,0 @@
-com/example/springapp/SpringappApplication.class
-com/example/springapp/Message/ResponseFile.class
-com/example/springapp/Service/AppService.class
-com/example/springapp/Model/Model.class
-com/example/springapp/Control/AppController.class
-com/example/springapp/Message/ResponseMessage.class
-com/example/springapp/Repository/FileRepository.class
